@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/previousTimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="monospace"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textStyle="normal"/>
+
+        <Chronometer
+            android:id="@+id/chronometerCounter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="monospace"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/startTimer"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:contentDescription="@string/ic"
+                android:background="@drawable/baseline_play_arrow_orange_700_48dp" />
+
+            <ImageView
+                android:id="@+id/pauseTimer"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:contentDescription="@string/ic"
+                android:layout_marginStart="28dp"
+                android:layout_marginEnd="28dp"
+                android:background="@drawable/baseline_pause_green_a700_48dp"/>
+
+            <ImageView
+                android:id="@+id/resumeTimer"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:visibility="gone"
+                android:contentDescription="@string/ic"
+                android:layout_marginStart="28dp"
+                android:layout_marginEnd="28dp"
+                android:backgroundTint="#00C853"
+                android:background="@drawable/baseline_play_arrow_orange_700_48dp" />
+
+            <ImageView
+                android:id="@+id/stopTimer"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:contentDescription="@string/ic"
+                android:background="@drawable/baseline_stop_red_700_48dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_your_task_type"
+                android:textSize="14sp"
+                android:fontFamily="monospace"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/taskType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="monospace"
+                android:textSize="14sp"
+                android:inputType="textMultiLine" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

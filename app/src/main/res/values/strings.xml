@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Timer App</string>
+    <string name="timer">Timer</string>
+    <string name="_00_00">00:00:00</string>
+    <string name="ic">ic</string>
+    <string name="enter_your_task_type">Enter your task type :</string>
+</resources>
